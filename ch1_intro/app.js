@@ -10,7 +10,7 @@ console.warn("thi is a warning")
 var--> is a global variable , do not try to use often
 const can be assigned at the beginning for non-primitive ones.
 const is used often for not to change.
-let is local variable
+let is local variable.
 */
 
 var pi =3.14;
