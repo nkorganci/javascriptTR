@@ -13,6 +13,7 @@ const is used often for not to change.
 let is local variable.
 */
 
+//--------------const--------------------------------------
 var pi =3.14;
 console.log(pi);
 console.log(typeof pi);
@@ -31,4 +32,8 @@ console.log(typeof fname);//number
 
 //const pinum; //Missing initializer, must be initialized
 const pinum =3;
-pinum=4; //Assignment to constant variable, const can not be changed
+//pinum= 4; //Assignment to constant variable, const can not be changed
+
+//----------------let-----------------------------------------
+let price;
+console.log(typeof price);//undefined
