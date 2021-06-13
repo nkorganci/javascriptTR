@@ -1,8 +1,8 @@
 console.log("Hello Javascript");
 // console.log("easey")  , comment ctrl /
 /* 2nd way of comment */
-console.error("this is an error")
-console.warn("thi is a warning")
+// console.error("this is an error")
+// console.warn("thi is a warning")
 //alert("Stop pay attention");
 
 //==> VARIABLE==============================================
@@ -13,7 +13,7 @@ const is used often for not to change.
 let is local variable.
 */
 
-//--------------const--------------------------------------
+//-------------->>CONST
 var pi =3.14;
 console.log(pi);
 console.log(typeof pi);
@@ -34,6 +34,10 @@ console.log(typeof fname);//number
 const pinum =3;
 //pinum= 4; //Assignment to constant variable, const can not be changed
 
-//----------------let-----------------------------------------
+//---------------->>LET
+/*
+Let is a block-scope variable
+Let is only valid in local
+*/
 let price;
 console.log(typeof price);//undefined
