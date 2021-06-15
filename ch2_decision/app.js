@@ -57,65 +57,91 @@
 
 //------->>> TERNARY OPERATORS
 
-var a = 22;
-var b = a > 120 ? "fast 😢" : a > 90 ? "normal 👍" : "slow 👏";
-console.log(b);
+// var a = 22;
+// var b = a > 120 ? "fast 😢" : a > 90 ? "normal 👍" : "slow 👏";
+// console.log(b);
 
-//Example-Grading
-a = "a";
+// //Example-Grading
+// a = "a";
 
-switch (a) {
-  case "a":
-    console.log("a>90");
-    break;
-  case "b":
-    console.log("a>70");
-}
+// switch (a) {
+//   case "a":
+//     console.log("a>90");
+//     break;
+//   case "b":
+//     console.log("a>70");
+// }
 
-//---------->>ITERATIONS, for, for in, fo of , foreach, while, do while
-for(let i=0; i<5;i++){
-    console.log("hello")
-};
+// //---------->>ITERATIONS, for, for in, fo of , foreach, while, do while
+// for(let i=0; i<5;i++){
+//     console.log("hello")
+// };
 
-for(let i=0; i<5;i++){
-    console.log(i)
-};
+// for(let i=0; i<5;i++){
+//     console.log(i)
+// };
 
-for(let i=0; i<5;i++){
-    console.log(`Name${i}`)
-};
+// for(let i=0; i<5;i++){
+//     console.log(`Name${i}`)
+// };
 
-//--->>do-while
-// var a;
+// //--->>do-while
+// // var a;
+// // do{
+// //     a=prompt("write a number");
+
+// // }while(a<0||a>100);
+// // console.log(a);
+
+// //--->>>Primary Number
+// var a=5;
+// for(var b=2;b<a;b++){
+//     if(a%b==0){
+//         console.log("not prime");
+//         break;
+//     }else{
+//         console.log("prime");
+//         break;
+//     }
+
+// }
+
+// //--->>primary number 2
+
+// var a=8
+// var b=true;
+// for(var c=2;c<a;c++){
+//     if(a%c==0){
+//         b=false;
+//         break;
+//     }
+// }
+// var d= b?"primary":"not primary";
+// console.log(d);
+
+// //-->>Do While
+// a=4;
+// i=1;
 // do{
-//     a=prompt("write a number");
+//     console.log(i+"Hi");
+//     i++;
+// }while(i<a);
 
-// }while(a<0||a>100);
-// console.log(a);
+//--->> 2nd Example Do while
 
-//--->>>Primary Number
-var a=5;
-for(var b=2;b<a;b++){
-    if(a%b==0){
-        console.log("not prime");
-        break;
-    }else{
-        console.log("prime");
-        break;
-    }
+// var a4;
+// do{
+//     a4=Number(prompt("Enter a number bigger than 100"));
+// }while(a4>100 || a4<0);
 
-}
+// console.log(`number ${a4} small`);
 
-//--->>primary number 2
+//--->> 3rd While Loop
 
-var a=8
-var b=true;
-for(var c=2;c<a;c++){
-    if(a%c==0){
-        b=false;
-        break;
-    }
-}
-var d= b?"primary":"not primary";
-console.log(d);
+// var a=prompt(" Enter a number");
 
+// while(a>100){
+//     console.log(`number is bigger {a}`);
+// }
+
+// NOTE-->>> While, do , for loops are not often used in MODERN Javascript
