@@ -148,16 +148,16 @@
 
 
 //----> TYPE CONVERSIONS
-const money ="100";
-console.log(money +14);//10014
-console.log(Number(money)+14);//114
+// const money ="100";
+// console.log(money +14);//10014
+// console.log(Number(money)+14);//114
 
-const lang="java";
-console.log(Number(lang));//NaN
-console.log(Number("123a"));//NaN
+// const lang="java";
+// console.log(Number(lang));//NaN
+// console.log(Number("123a"));//NaN
 
-const num3=23;
-console.log(String(num3),2);//23 2, number convertd to string
+// const num3=23;
+// console.log(String(num3),2);//23 2, number convertd to string
 
-const s1=3;
-console.log(Boolean(s1));//true
+// const s1=3;
+// console.log(Boolean(s1));//true
