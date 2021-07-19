@@ -51,31 +51,31 @@
 
 //3rd Way, function can be assigned to a variable, function has no name, variable name ==function name, used more often
 
-var oddEven2 = function(number){
-return number%2? "odd":"even";
+// var oddEven2 = function(number){
+// return number%2? "odd":"even";
 
-}
+// }
 
-console.log(oddEven2(2));
+// console.log(oddEven2(2));
 
-// 4th Way Arrow
+// // 4th Way Arrow
 
-//4c
-const g =(x)=>console.log(x);// has only one function,it has automatic return functin
+// //4c
+// const g =(x)=>console.log(x);// has only one function,it has automatic return functin
 
-//4a
-function g1(x){
-    console.log(x);
-}
+// //4a
+// function g1(x){
+//     console.log(x);
+// }
 
-//4b
-const g2= function(x){
-    console.log(x)
-}
-//Example
-const g3 =(x,y)=>x+y;//invoke
-console.log(g3(2,4));//invoke
+// //4b
+// const g2= function(x){
+//     console.log(x)
+// }
+// //Example
+// const g3 =(x,y)=>x+y;//invoke
+// console.log(g3(2,4));//invoke
 
-//Example
-const g4 =(x)=>x%2==0?"even":"odd";
-console.log(g4(3));
+// //Example
+// const g4 =(x)=>x%2==0?"even":"odd";
+// console.log(g4(3));

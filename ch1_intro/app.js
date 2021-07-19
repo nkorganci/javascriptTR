@@ -1,28 +1,58 @@
-// console.log("Hello Javascript");
-// // console.log("easey")  , comment ctrl /
-// /* 2nd way of comment */
-// // console.error("this is an error")
-// // console.warn("thi is a warning")
-// //alert("Stop pay attention");
+console.log("Hello Javascript, NOT INLINE JS");
+//clg + enter= console.log();
 
-// //==> VARIABLE==============================================
-// /*
-// var--> is a global variable , do not try to use often.
-// If you define a var in a scope it is called function scope
-// const can be assigned at the beginning for non-primitive ones.
-// const is used often for not to change.
-// let is local variable.
-// */
+// console.log("easy")  , comment ctrl /, //, /* */
 
-// //-------------->>CONST
-// var pi =3.14;
-// console.log(pi);
-// console.log(typeof pi);
 
-// pi="3";
-// console.log(pi);
-// console.log(typeof pi);
-//SAmpe
+//?===> ALERTS You can show error by 3 ways
+/*console.error("this is an error")
+console.warn("thi is a warning")
+alert("Stop pay attention");//Gives information to client */
+
+//?===>DATA TYPES
+/*
+String: String and Char
+Number: All tyeps, integer, decimal...
+Undefined: var n1; not assigned
+Null:
+Symbol: Unique values
+BigInt: Huge numbers
+*/
+
+//? VAR, LET, CONST, 
+/*variable should 
+start with a "letter" or " _", 
+can not have symbol or special characters
+case sensitive
+should be camelCase
+*/
+
+/*
+var--> is a global variable , do not try to use often.
+If you define a var in a scope it is called function scope
+const can be assigned at the beginning for non-primitive ones.
+const is used often for not to change.
+let is local variable.
+*/
+
+//?===>CONST
+var pi =3.14;
+console.log(pi);
+console.log(typeof pi);
+
+pi="3";
+console.log(pi);
+console.log(typeof pi);
+
+pi=true;
+console.log(pi);
+console.log(typeof pi);
+
+
+
+
+
+
 // fname ="Adam";
 // console.log(typeof fname);//String
 
@@ -79,7 +109,7 @@
 // const n1="adam";
 // const age=33;
 // console.log(`my name is ${n1} and my age is ${age}`);
-// console.log(`my name is ${n1} 
+// console.log(`my name is ${n1}
 // and my age is ${age}`);//can be used as 2nd way
 
 // //e.g.
@@ -106,9 +136,7 @@
 // const e= Math.floor(x/100);
 // console.log(e)
 
-
 // //COMPARISONS, ===(compare both value and type) and ==(compare only values)
-
 
 // x=2;
 // y=2;
@@ -145,7 +173,6 @@
 // age2>=18 ? console.log(`${name1} can get ID`):console.log(`${name1} can not get ID`);
 // //A function can be assigned to a variable with backtick
 // const res = age2>19? console.log( `${name1} could get ID` ): console.log(`${name1} could not get ID`);
-
 
 //----> TYPE CONVERSIONS
 // const money ="100";
