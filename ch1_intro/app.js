@@ -22,7 +22,7 @@
 // pi="3";
 // console.log(pi);
 // console.log(typeof pi);
-
+//SAmpe
 // fname ="Adam";
 // console.log(typeof fname);//String
 
