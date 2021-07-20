@@ -1,8 +1,7 @@
-console.log("Hello Javascript, NOT INLINE JS");
+// console.log("Hello Javascript, NOT INLINE JS");
 //clg + enter= console.log();
 
 // console.log("easy")  , comment ctrl /, //, /* */
-
 
 //?===> ALERTS You can show error by 3 ways
 /*console.error("this is an error")
@@ -19,7 +18,7 @@ Symbol: Unique values
 BigInt: Huge numbers
 */
 
-//? VAR, LET, CONST, 
+//? VAR, LET, CONST,
 /*variable should 
 start with a "letter" or " _", 
 can not have symbol or special characters
@@ -28,15 +27,17 @@ should be camelCase
 */
 
 /*
-var--> is a global variable , do not try to use often.
-If you define a var in a scope it is called function scope
+*var--> is a global variable , do not try to use often.
+*If you define a var in a scope it is called function scope
+
 const can be assigned at the beginning for non-primitive ones.
 const is used often for not to change.
+
 let is local variable.
 */
 
-//?===>CONST
-var pi =3.14;
+//?===>VAR
+/* var pi =3.14;
 console.log(pi);
 console.log(typeof pi);
 
@@ -48,143 +49,152 @@ pi=true;
 console.log(pi);
 console.log(typeof pi);
 
+fname ="Adam";// var fname ="Adam"; //Are same
+console.log(typeof fname);//String
 
+fname =12;
+console.log(typeof fname);//number */
 
+//? CONST and LET are in MODERN JAVASCRIPT,
 
+//*Missing initializer, must be initialized
+//const pinum;
 
-
-// fname ="Adam";
-// console.log(typeof fname);//String
-
-// fname =12;
-// console.log(typeof fname);//number
-
-// //const and let are new keywords
-
-// //const pinum; //Missing initializer, must be initialized
 // const pinum =3;
-// //pinum= 4; //Assignment to constant variable, const can not be changed
+// pinum= 4;
 
-// //?---------------->>LET
-// /*
-// 1-Let is a block-scope variable
-// 2-Let is only valid in local
-// */
-// let price;
-// console.log(typeof price);//undefined
+/*
+ *CONST can be also a block-scope if it is defined in a scope
+ *Assignment to constant variable, const can not be changed(except for non-primitives)
+ *const must have initial value.
+ */
 
-// //Three methods to write a string
-// let name1="Hawa";//Double quote
-// let name2='David';//Single quote
-// let name3 =`George`;//Back=tick
+//?=====>>LET====
 
-// console.log(name3);
-// console.log();
+/*
+ *1-Let is a block-scope variable. It is valid only its own block.
+ *2-Let is only valid in local
+ *Var is a global scope.
+ */
 
-// let name4=null;
-// console.log(typeof name4); // null is an object
+/* let price;
+console.log(typeof price); //Undefined
+price = 4.4;
+console.log(price);
+console.log(typeof price);
+ */
 
-// //?--------->>ARITHMETIC OPERATIONS
-// let a = 2**3;
-// console.log(a);
+//? String can be written by 3 ways
+/* let name1="Adam1";
+let name2='Adam2';
+let name3=`Adam3`;// More flexible, in modern JS
 
-// //MOre than one variable
-// const a1=2;
-// const b1=3;
-// let c1 = a1+b1;
-// console.log(c1);
-// console.log("price is: ", c1*2)//more than one variable can be written by comma ","
+console.log(name1);
+console.log(name2);
+console.log(name3); */
 
-// //+ is used for addition and concanation
-// const a2="adam";
-// const b2="david";
+//?===> NULL============
+/* const lan=null;
+console.log(lan);
+console.log(typeof lan);//Object */
 
-// const c3=3,d3=5;// by using comma you can assign
+//?====== OPERATORS ======
+/* const f1=40;
+const f2=2;
+const f3=5;
+const sum=f1+f2+f3; */
+//sum++;// can not be changed
 
-// let d1=3;
-// let d2=4;
-// console.log(`d1+d2`, d1+d2);
+//*Comma is used to write more than one variable.
+// console.log("total price= ",sum,", f1 price=", f1);
 
-// //--->>backtick ` string ${} `, practical method
-// const n1="adam";
-// const age=33;
-// console.log(`my name is ${n1} and my age is ${age}`);
-// console.log(`my name is ${n1}
-// and my age is ${age}`);//can be used as 2nd way
+//* "+" is used to add number or strings.
+//* const m4=5; m5=7;, m6=8;  More than one variable can be defined
+/* const m1=5;
+const m2="5";
+const m3=4;
+console.log(m1+m2+m3); */
 
-// //e.g.
-// var x=2;
-// var y=4;
-// console.log(`x+y`, x+y);
-// console.log(`x and y: ${x + y}`);//expression can be done in template literal
+//? Template Literals: Backtick  ` `, `String:{variable} string, ES6
+//*METHOD(Java)=FUNCTION(JavaScript)
 
-// //add, substract, multiply, division
-// x+=2;
-// y-=2;
-// console.log(x+y);
+//*Example1
+/* const a1="Adam";
+const age1=44;
+console.log(`My name is ${a1}, age is ${age1}`);//*1st Way which is great, practical
+console.log("My name is " + a1 + "," + " My age is " + age1)// 2nd Way */
 
-// //Mod %
-// console.log(x%3);
-// x=123;
-// const c=x%10;
-// console.log(c);
+//*Example2
+/* const c1="Adam";
+const c2=1990;
+const c3=2016;
+const age= c3-c2;
+console.log("My age is: " + c3-c2);//! NaN= Not a number error
+console.log("My age is: " +(c3-c2));
+console.log(`My age is ${c3-c2}`);//*Expression can be used in Template literal */
 
-// //Math.floor, math.ceil, math.round
-// const d = Math.floor(x/10)%10;
-// console.log(d);//2nd digit
+//? Exponential
+/* const d1=3;
+const d2=2;
+const d3=3**2;
+console.log(d3); */
 
-// const e= Math.floor(x/100);
-// console.log(e)
+//? Math and Mod
+/* Math.floor();
+Math.round();
+Math.ceil(); */
 
-// //COMPARISONS, ===(compare both value and type) and ==(compare only values)
+/* const e1=16;
+const e2=88;
+console.log(Math.floor(e1/10));
+console.log(Math.ceil(e1/10));
+console.log(Math.round(e1/10));
+console.log(Math.max(e1/10,2,4));
+console.log(Math.min(e1/10,1)); */
 
-// x=2;
-// y=2;
-// console.log(x==y);//true
+//? Comparison Operators "==",<,>= compare only value, "===" ,"!==" compare both value and type
+/* const f1=4;
+const f2="4";
+console.log(f1===f2);//False
+console.log(f1==f2);//True
+console.log(f1>f2); */
 
-// x=2;
-// y="2";
-// console.log(x===y);//false
+//? Logical Operators: 0, flase, null, undefined, NaN==>false, all others "true"
 
-// //>, <, =>...checks only values.
-// console.log(x>=y)
+/* const g1=true;
+const g2=null;
 
-// //Values accepted as FALSE: 0, FALSE, NULL, undefined, "", NaN
-// //The others are accepted as TRUE
-// console.log(x==y&&x!=y);//last value decide the result
-// x=null;
-// y=true;// y can be 2 which is accepted as true
-// console.log(x&&y);//null, 1st false value will be returned
-// console.log(x||y);
+console.log(g1||g2);//true
+console.log(g1&&g2);//null
 
-//-->TERNARY-----------------------------------------
-// const age =prompt("enter your age");//Like a scanner
-// console.log('age:', age);
-// console.log(typeof age);// default accepted as string
+console.log(g2 || g1);//true
+console.log(g2 && g1);//null */
+//* &&  boolean, return first false value
+/* console.log(null&&true&&true);
+console.log(true&&false&&null);
+ */
 
-// const age1 =+prompt("enter your age");//Like a scanner
-// console.log('age:', age1);
-// console.log(typeof age1);// Number
-// const name1=prompt("Enter your name")
-// const age2 =Number(prompt("enter your age"));//Number class is used
-// console.log('age:', age2);
-// console.log(typeof age2);// Number
+//? ========= TERNARY ===========
+//* "+" or "Number" should be written to convert STRING to NUMBER
+/* console.log("hi");
+const age2 = prompt("write your age");
+const age3 = +prompt("write your salary"); //Typeof: Number
+const age3 = Number(prompt("write your salary")); //Typeof: Number
+console.log(typeof age2); //Typeof: String
+console.log("Your age is: " + age2); */
 
-// age2>=18 ? console.log(`${name1} can get ID`):console.log(`${name1} can not get ID`);
-// //A function can be assigned to a variable with backtick
-// const res = age2>19? console.log( `${name1} could get ID` ): console.log(`${name1} could not get ID`);
+//? Example:
 
-//----> TYPE CONVERSIONS
-// const money ="100";
-// console.log(money +14);//10014
-// console.log(Number(money)+14);//114
+const age5=Number(prompt("Enter your age to check ID"));
+const name5=prompt("Your name")
 
-// const lang="java";
-// console.log(Number(lang));//NaN
-// console.log(Number("123a"));//NaN
+if(age5>18){
+    console.log("you can drive");
+}else{
+    console.log("you can not drive");
+}
 
-// const num3=23;
-// console.log(String(num3),2);//23 2, number convertd to string
+age5>18? console.log(`${name5} can drive`): console.log(`${name5} can not drive`);
 
-// const s1=3;
-// console.log(Boolean(s1));//true
+const result= age5>18?`${name5} can`:`${name5} can not`;
+console.log(result);
