@@ -1,147 +1,48 @@
-// const age = 18;
-// let result=0;
+//?If else is not used often, use TERNARY.
+//*Example: If Else
 
-// if (age > 18) {
-//   result = "Adult";
-// } else {
-//   result = "child";
-// }
+/* const a1 = +prompt("Enter first number");
+const a2 = +prompt("Enter second number");
+const operation = prompt("What do you want: ");
+let cal=0;
 
-// console.log(result);
+if (operation == "+") {
+  cal = a1 + a1;
+} else if (operation == "-") {
+  cal = a1 - a2;
+} else if (operation == "*") {
+  cal = a1 * a2;
+} else {
+  console.log("Invalid Operation");
+}
 
-// // CALCULATOR
-// const num1 = Number(prompt("write the 1st num"));
-// const typeOfCal = prompt("What do you want to do: ");
+console.log(`${a1} ${operation} ${a2}= ${cal}`); */
 
-// const num2 = Number(prompt("write the 2nd num"));//Not to have String
-// let res=0;
-// if (typeOfCal=="*") {
-//   res=num1*num2;
-// } else if (typeOfCal == "/") {
-//   res = num1 / num2;
-// } else if (typeOfCal == "+") {
-//   res = num1 + num2;
-// }else{
-//     alert("Wrong operation")
-// }
+//* Example: Ternary, if there are too many condition use switch-case or if-else ( more than 3)
 
-// console.log(`result is ${num1} ${typeOfCal} ${num2} = ${res}`);
+/* const b1 = +prompt("Enter your age");
+const b2 = prompt("Are you healty y/n");
 
-//--->> Example, if healty
-// const a =prompt("How old are you");
-// const h= prompt("Are you healty");
+const res = b1 > 18 && b2 == "y" ? "can be soldier" : "can not be soldier";
+console.log(res);
+alert(res);
+ */
 
-// a>18&&h=="yes"? console.log("accepted"):console.log("rejected");
-// alert(a>18&&h=="yes" ? "good":"bad");
-// const rsl = a>18&&h=="yes"? console.log("accepted"):console.log("rejected");// can be assigned to a variable
+//? SWITCH-CASE, not recommended in javascript
+/* const f1 = +prompt("Write a number: ");
 
-//--------------->> SWITCH CASE
-// it checks value and type '==='
-// const day=Number(prompt("Write the day number"));//promt takes String automatically
-// var a;2
-// switch(day){
-//     case 1:
-//         dayn="monday";
-//         a="monday2";
-//         //break;
-//     case 2:
-//         dayn="tuesday";
-//         break;
-//     default:
-//         alert("not a valid num");
-//         break;
-// }
+switch (f1) {
+  case 1:
+    console.log("one");
+    break;
+  case 2:
+    console.log("two");
+    break;
+  default:
+    alert("enter valid number");
+    console.log("not a number");
+    break;
+} */
 
-// console.log(dayn);
-// console.log(a);
+//* "windows + ." shows emoji
 
-//------->>> TERNARY OPERATORS
-
-// var a = 22;
-// var b = a > 120 ? "fast 😢" : a > 90 ? "normal 👍" : "slow 👏";
-// console.log(b);
-
-// //Example-Grading
-// a = "a";
-
-// switch (a) {
-//   case "a":
-//     console.log("a>90");
-//     break;
-//   case "b":
-//     console.log("a>70");
-// }
-
-// //---------->>ITERATIONS, for, for in, fo of , foreach, while, do while
-// for(let i=0; i<5;i++){
-//     console.log("hello")
-// };
-
-// for(let i=0; i<5;i++){
-//     console.log(i)
-// };
-
-// for(let i=0; i<5;i++){
-//     console.log(`Name${i}`)
-// };
-
-// //--->>do-while
-// // var a;
-// // do{
-// //     a=prompt("write a number");
-
-// // }while(a<0||a>100);
-// // console.log(a);
-
-// //--->>>Primary Number
-// var a=5;
-// for(var b=2;b<a;b++){
-//     if(a%b==0){
-//         console.log("not prime");
-//         break;
-//     }else{
-//         console.log("prime");
-//         break;
-//     }
-
-// }
-
-// //--->>primary number 2
-
-// var a=8
-// var b=true;
-// for(var c=2;c<a;c++){
-//     if(a%c==0){
-//         b=false;
-//         break;
-//     }
-// }
-// var d= b?"primary":"not primary";
-// console.log(d);
-
-// //-->>Do While
-// a=4;
-// i=1;
-// do{
-//     console.log(i+"Hi");
-//     i++;
-// }while(i<a);
-
-//--->> 2nd Example Do while
-
-// var a4;
-// do{
-//     a4=Number(prompt("Enter a number bigger than 100"));
-// }while(a4>100 || a4<0);
-
-// console.log(`number ${a4} small`);
-
-//--->> 3rd While Loop
-
-// var a=prompt(" Enter a number");
-
-// while(a>100){
-//     console.log(`number is bigger {a}`);
-// }
-
-// NOTE-->>> While, do , for loops are not often used in MODERN Javascript
