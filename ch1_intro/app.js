@@ -116,6 +116,7 @@ const m3=4;
 console.log(m1+m2+m3); */
 
 //? Template Literals: Backtick  ` `, `String:{variable} string, ES6
+//? `${}` you can call function or expression
 //*METHOD(Java)=FUNCTION(JavaScript)
 
 //*Example1
@@ -185,7 +186,7 @@ console.log("Your age is: " + age2); */
 
 //? Example:
 
-const age5=Number(prompt("Enter your age to check ID"));
+/* const age5=Number(prompt("Enter your age to check ID"));
 const name5=prompt("Your name")
 
 if(age5>18){
@@ -197,4 +198,22 @@ if(age5>18){
 age5>18? console.log(`${name5} can drive`): console.log(`${name5} can not drive`);
 
 const result= age5>18?`${name5} can`:`${name5} can not`;
-console.log(result);
+console.log(result); */
+
+//? Type conversion
+//* STRING - NUMBER
+
+/* const i1=41;
+console.log(String(i1), i1);
+console.log(typeof(String(i1)));
+
+const i2="Hi";
+const i3="123";
+console.log(Number(i2));//NaN
+console.log(Number(i3));//123 */
+
+//* STRING&&NUMBER==>BOOLEAN, (0, NULL, NAN,UNDEFINED,FALSE)==FALSE
+/* const num1=2;
+console.log(Boolean(num1));//true */
+
+
