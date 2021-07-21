@@ -53,10 +53,37 @@ console.log(oddEven01(4)); */
 console.log(bigNumber(9,3,4)); */
 
 //? Functional Programming => Arrow Function
-
-const sum = (a, b) => a + b;
+//* Examples
+/* const sum = (a, b) => a + b;
 console.log(sum(2, 4));
 
-const oddEven02=(c)=>c%2==0?"even":"odd";
-console.log(oddEven02(4));
+const oddEven02 = (c) => (c % 2 == 0 ? "even" : "odd");
+console.log(oddEven02(4)); */
 //alert(oddEven02(9));
+
+//*Example: exponential
+/* const d01 = +prompt("Enter first number: ");
+const d02 = +prompt("Enter the second number");
+const re=(a,b)=>a**b;
+console.log(re(d01,d02));
+console.log(re(3,3)); */
+
+//*Example: without parameter, if more than one parameter, use {}
+/* const e01=()=>{
+  console.log("1");
+  console.log("12");
+  console.log("13");
+}
+e01(); */
+
+//*Example 02: Name, age...
+const info=(name01,age01,birthday01)=>
+  `my name is ${name01} , age${age01} and birthday01 ${birthday01}`;
+  
+  console.log(info("adam",33,1999));
+
+const hint=(nam,ag,birt) =>{
+  const res=`name ${nam}, ${ag+birt}`;
+  return res;
+}
+console.log(hint("a",2,2))
