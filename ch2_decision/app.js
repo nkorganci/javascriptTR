@@ -95,11 +95,11 @@ console.log("nice job")
 
 //? Example- Enter grade till you press Q
 
-let q = prompt("Enter the grade");
+/* let q = prompt("Enter the grade");
 let i = 1;
 while (q != "q") {
   q = prompt("Enter the gradeq");
   console.log(i + " number you enered" + q);
   i++;
 }
-console.log("Successfull grade");
+console.log("Successfull grade"); */

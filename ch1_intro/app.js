@@ -215,5 +215,3 @@ console.log(Number(i3));//123 */
 //* STRING&&NUMBER==>BOOLEAN, (0, NULL, NAN,UNDEFINED,FALSE)==FALSE
 /* const num1=2;
 console.log(Boolean(num1));//true */
-
-
