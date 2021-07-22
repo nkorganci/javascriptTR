@@ -23,7 +23,40 @@ pic[1].style.border = "4px solid blue";
 
 //? ========== getElementsByClassName ============
 const h101 = document.getElementsByClassName("h1");
-h101[0].style.background="red";
-h101[0].style.color="blue";
-h101[0].style.textAlign="center";
- 
+h101[0].style.background = "red";
+h101[0].style.color = "blue";
+h101[0].style.textAlign = "center";
+
+//? ============  querySelector ==================
+const title01 = document.querySelector(".title01");
+title01.innerHTML = "DOM Selector 😜";
+
+const body01 = document.querySelector("#body01");
+body01.style.backgroundImage = "linear-gradient(blue, yellow";
+
+//?============ EVENTS =====================
+/*
+There are 5 Ways: Javascript and html should be separated
+so we should not use 1st and 2nd one
+*/
+
+//? 3rd Way : Use just javascript
+//* Example: Mouse Over, Mouse outline:
+document.querySelector(".h1").onmouseover = function () {
+  const h1 = document.querySelector(".h1");
+  h1.style.color = "white";
+  h1.style.backgroundColor = "black";
+};
+
+document.querySelector(".h1").onmouseout = function () {
+  const h1 = document.querySelector(".h1");
+  h1.style.color = "black";
+  h1.style.backgroundColor = "white";
+};
+
+//? 4th Way: addEventListener() , define EVENT
+
+document.querySelector("#btn").addEventListener("mouseover",()=>{
+    const bt01=document.querySelector("#btn");
+    bt01.style.color="blue";
+})
