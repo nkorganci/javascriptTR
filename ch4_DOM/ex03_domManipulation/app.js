@@ -33,5 +33,21 @@ const h1 = document.createElement("h1");
 const text = document.createTextNode("Programming Language");
 h1.appendChild(text);
 lastDiv.after(h1);
-h1.style.marginTop="20px";
-h1.style.color="red";
+h1.style.marginTop = "20px";
+h1.style.color = "red";
+h1.style.textAlign = "left";
+
+document.querySelector(".add").onclick = function () {
+  const list = document.querySelector(".list");
+  const row = document.querySelector(".language").value;
+  const neList = document.createElement("li");
+  const textNode = document.createTextNode(row);
+  neList.appendChild(textNode);
+  list.appendChild(neList);
+  list.removeChild(list.lastElementChild);
+};
+
+document.querySelector(".delete").onclick = function () {
+  const list = document.querySelector(".list");
+  list.removeChild(list.lastElementChild);
+};
