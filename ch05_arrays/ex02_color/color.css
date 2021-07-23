@@ -1,0 +1,23 @@
+.container{
+    /* Row is default */
+    width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.btn{
+    padding: 20px;
+    background-color: beige;
+    border-radius: 14px;
+
+}
+
+.btn:hover{
+    background-color: greenyellow;
+}
+
