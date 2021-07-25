@@ -128,8 +128,56 @@ document.querySelector(".sum05").innerHTML = `${sum06} TL`;
 
 //! forEach has no return type, it is void
 //* Example: add %10 for each number.
-//* Not a good example for this, just for practice. 
+//* Not a good example for this, just for practice.
 let price = [10, 20, 30];
 let newPrice = [];
-let price01 = price.forEach((t, i) => (newPrice[i] = (t+t/3).toFixed(2)));
+let price01 = price.forEach((t, i) => (newPrice[i] = (t + t / 3).toFixed(2)));
 console.log(newPrice);
+
+//? ========== MAP METHODS, IT has return, not like forEach=============
+//* Example: Multiply by 5
+const num07 = [1, 2, 3];
+const num07a = num07.map((t) => 5 * t);
+console.log(num07a);
+
+//* Example: Make it upper cases
+const nam01 = ["hi", "david", "Mat"];
+const nam02 = nam01.map((t) => t.toUpperCase());
+const nam03 = nam02.map((t) => console.log(t));
+
+//* Map and forEach
+nam01.map((t) => t.toUpperCase()).forEach((t) => console.log(t));
+
+//* Example: Euro Dollar parameter calculator
+prices = [10, 20, 33];
+
+/* const euro = document.querySelector(".euro");
+const dolar = document.querySelector(".dolar");
+
+const eurof = document.querySelector(".eurof");
+const dolarf= document.querySelector(".dolarf");
+
+
+dolar.onchange=function(){
+dolarf.innerHTML=prices.map(t=>Math.round(t/dolar.value));
+} */
+
+//* Example: change in price
+const changedP = prices.map((v, i) => {
+  if (v > 20) {
+    return `${i + 1}. product new price: ${v * 1.1}`;
+  } else {
+    return `${i + 1}. product new price: ${v * 1.1}`;
+  }
+});
+console.log(changedP);
+
+document.querySelector(".changedP").innerHTML = changedP;
+
+//* filter-> does not change anythings, just filters
+const filterM = prices.filter((t) => t < 20);
+console.log(filterM);
+
+//* Sort-> we need to use 2 parameters
+console.log(prices.sort((a, b) => a - b));
+console.log(prices.sort((a, b) => b-a));
