@@ -118,8 +118,18 @@ document.querySelector(".sum05").innerHTML = `${sum05} TL`;
 let num06 = [2, 4, 6];
 let sum06 = 0;
 
-num05.forEach((t,i,d) =>{
+num05.forEach((t, i, d) => {
+  console.log(`${i}. iteration ${sum06}`);
   sum06 += t;
-} 
+});
+
 console.log(sum06);
 document.querySelector(".sum05").innerHTML = `${sum06} TL`;
+
+//! forEach has no return type, it is void
+//* Example: add %10 for each number.
+//* Not a good example for this, just for practice. 
+let price = [10, 20, 30];
+let newPrice = [];
+let price01 = price.forEach((t, i) => (newPrice[i] = (t+t/3).toFixed(2)));
+console.log(newPrice);
