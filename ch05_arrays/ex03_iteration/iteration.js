@@ -231,3 +231,9 @@ const th01 = threeP.reduce((x, y, i) => {
 });
 
 console.log(th01);
+
+//* Example: salary in html and javascript
+const salary = [3, 5, 7, 9, 11];
+const list = document.createElement("ul");
+list.className="list";
+document.querySelector(".list-div").appendChild(list);
