@@ -165,19 +165,69 @@ dolarf.innerHTML=prices.map(t=>Math.round(t/dolar.value));
 //* Example: change in price
 const changedP = prices.map((v, i) => {
   if (v > 20) {
-    return `${i + 1}. product new price: ${v * 1.1}`;
+    return `${i + 1}. product new price: ${v * 1.1}<br>`;
   } else {
-    return `${i + 1}. product new price: ${v * 1.1}`;
+    return `${i + 1}. product new price: ${v * 1.1}<br>`;
   }
 });
 console.log(changedP);
 
 document.querySelector(".changedP").innerHTML = changedP;
 
-//* filter-> does not change anythings, just filters
+//? filter-> does not change anythings, just filters, like map(), return filtered ones
 const filterM = prices.filter((t) => t < 20);
 console.log(filterM);
 
-//* Sort-> we need to use 2 parameters
-console.log(prices.sort((a, b) => a - b));
-console.log(prices.sort((a, b) => b-a));
+//? Sort-> we need to use 2 parameters
+const sort01 = ["ea", "ca", "bad"];
+const sort001 = sort01.sort();
+console.log(sort001);
+console.log(sort01.sort());
+
+const sort02 = [1, 2, 0];
+const sort002 = sort02.sort();
+console.log(sort002);
+console.log(sort02.sort((a, b) => b - a));
+
+const sort03 = ["a", 1, "b", 2];
+console.log(sort03.sort());
+
+//? Pipeline-> using more than one arrow function
+//* Example: if the salary is less than 60, increase price by 10,otherwise 20;
+const salary = [20, 40, 60, 80];
+const salaryH = salary
+  .filter((t) => t < 60)
+  .map((t) => t * 1.1)
+  .forEach((t) => console.log(t));
+
+//* Example:
+const names01 = ["Adam", "Hawa", "Mariam"];
+const names01a = names01
+  .filter((t) => t.startsWith("H") || t.startsWith("A"))
+  .forEach((t) => console.log(t));
+
+//* 1st Way: by function
+const findA = (h) => {
+  const upperc = h.toUpperCase();
+  names01b = names01
+    .filter((t) => t.startsWith(upperc))
+    .forEach((t) => console.log(t));
+};
+
+findA("H");
+
+//? Reduce: return a single value, does not change original array
+//* Reduce(x, y)=> x is total value, y is the one in an array
+const reduce01 = [1, 3, 3];
+const r01 = reduce01.reduce((x, y) => x + y, 0); // 0 is initial value of x
+const r02 = reduce01.reduce((x, y) => x * y, 1);
+console.log(r01, r02);
+
+//* Reduce(x,y,i)=> with index parameter
+const threeP = [2, 4, 5, 6];
+const th01 = threeP.reduce((x, y, i) => {
+  console.log(`${i}.Iteration : ${x}`);
+  return x + y;
+});
+
+console.log(th01);
