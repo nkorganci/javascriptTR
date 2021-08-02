@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 400px;
+    /* width: 900px; */
+    background-color: yellow;
+    border:2px solid red;
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+}
+.container{
+    width: 800px;
+    text-align: center;
+    justify-content: center;
+    border: 3px dashed green;
+}
