@@ -1,20 +1,21 @@
 *{
     margin: 0px;
 }
-
 body{
-    box-sizing: border-box;
-    margin: 400px;
-    /* width: 900px; */
-    background-color: yellow;
-    border:2px solid red;
+    width: 1000px;
+    border: 2px solid red;
+    text-align: center;
     display: flex;
-    text-align: center;
-    /* justify-content: center; */
+    
+   }
+
+.navCon{
+display: flex;
+margin: 2px solid red;
+
 }
-.container{
-    width: 800px;
-    text-align: center;
-    justify-content: center;
-    border: 3px dashed green;
+.ul{
+ display: flex;
+ margin: 4px solid blue;
+    
 }
