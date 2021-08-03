@@ -1,21 +1,36 @@
 *{
     margin: 0px;
 }
-body{
-    width: 1000px;
-    border: 2px solid red;
-    text-align: center;
-    display: flex;
-    
-   }
 
-.navCon{
-display: flex;
-margin: 2px solid red;
+.nav{
+    width: 900px;
+    height: 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
 
 }
-.ul{
- display: flex;
- margin: 4px solid blue;
-    
+.link{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+.back{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 900px;
+    border: 2px solid blue;
+    margin: 10px;
+
+}
+
+.color{
+    color: blue;
 }
