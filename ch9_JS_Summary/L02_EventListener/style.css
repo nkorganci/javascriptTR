@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all {
+    display:flex; 
+    justify-content:center;
+    align-items: center;
+    width: 80vw;
+    height:80vh;
+    background-color: yellow;
+   
+  }
+
+.grandparent{
+    width: 600px;
+    height: 600px;
+    background-color: red ;
+    display:flex; 
+    justify-content:center;
+    align-items: center;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(124, 7, 233) ;
+    display:flex; 
+    justify-content:center;
+    align-items: center;
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(32, 218, 15) ;
+    display:flex; 
+    justify-content:center;
+    align-items: center;
+}

@@ -1,5 +1,7 @@
 //Selectors
 
+
+
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
@@ -14,11 +16,15 @@ function addTodo(event) {
 
   //todoDiv
   const todoDiv = document.createElement("div");
-todoDiv.classList.add("todo");
+  todoDiv.classList.add("todo");
 
-// Create LI
-const newTodo = document.createElement("li");
-newTodo.c
+  // Create LI
+  const newTodo = document.createElement("li");
+  newTodo.innerText = "Hey";
+  newTodo.classList.add("todo-item");
+  todoDiv.appendChild(newTodo);
 
+  //Check mark Button
+  const completebutton = document.createElement("button");
 }
-   
+
