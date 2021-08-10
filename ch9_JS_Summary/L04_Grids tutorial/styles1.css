@@ -1,56 +1,23 @@
-body,
-html {
-  height: 100vh;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+}
 body{
-    margin: 0;
     display: grid;
-    grid-template-columns: auto 27% 27% 27%;
-    grid-template-rows:8% 30% auto 10%  ;
-    grid-template-areas: 
-    "sidebar header header header"
-    "sidebar section section section"
-    "sidebar main main main"
-    "sidebar footer footer footer";
-    border: 10px dashed rebeccapurple;
+    grid-template-columns: 1.5em minmax(400px,65px) minmax(200px,60px) 1.5em minmax(600px,65px);
 }
 
-aside{
-     grid-area: sidebar;
-     background-color: pink;
-     border: 10px dashed rgb(255, 215, 192);
+.s1 {
+  border: 20px solid red;
 }
-header{
-    grid-area: header;
-    background-color: yellow;
-    border: 10px dashed rebeccapurple;
+.s2 {
+  border: 20px solid rgb(66, 172, 80);
 }
-
-section:nth-of-type(1){
-    grid-area: sect1;
-    background-color: rgb(162, 136, 187);
-
-}
-section:nth-of-type(2){
-    grid-area: sect2;
-    background-color: rgb(162, 136, 187);
-
-}
-section:nth-of-type(3){
-    grid-area: sect3;
-    background-color: rgb(162, 136, 187);
-}
-
-main{
-    grid-area: main;
-    background-color: rgb(43, 226, 83);
-    border: 10px dashed rebeccapurple;
-
-}
-footer{
-    grid-area: footer;
-    background-color: rgb(172, 202, 178);
-    border: 10px dashed rebeccapurple;
-
+.s3 {
+  border: 20px solid rgb(68, 17, 150);
+  grid-column: 1/10;
 }
