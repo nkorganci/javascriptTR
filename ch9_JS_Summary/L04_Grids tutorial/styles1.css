@@ -1,0 +1,56 @@
+body,
+html {
+  height: 100vh;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 27% 27% 27%;
+    grid-template-rows:8% 30% auto 10%  ;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar section section section"
+    "sidebar main main main"
+    "sidebar footer footer footer";
+    border: 10px dashed rebeccapurple;
+}
+
+aside{
+     grid-area: sidebar;
+     background-color: pink;
+     border: 10px dashed rgb(255, 215, 192);
+}
+header{
+    grid-area: header;
+    background-color: yellow;
+    border: 10px dashed rebeccapurple;
+}
+
+section:nth-of-type(1){
+    grid-area: sect1;
+    background-color: rgb(162, 136, 187);
+
+}
+section:nth-of-type(2){
+    grid-area: sect2;
+    background-color: rgb(162, 136, 187);
+
+}
+section:nth-of-type(3){
+    grid-area: sect3;
+    background-color: rgb(162, 136, 187);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(43, 226, 83);
+    border: 10px dashed rebeccapurple;
+
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(172, 202, 178);
+    border: 10px dashed rebeccapurple;
+
+}
