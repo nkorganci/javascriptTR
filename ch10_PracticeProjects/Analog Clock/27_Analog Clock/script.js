@@ -4,7 +4,7 @@ var secondHand = document.getElementById('secondHand');
 
 function initClock() {
 	var date = new Date();
-	var hour = date.getHours() % 12; // 0 - 23
+	var hour = date.getHours(); // 0 - 23
 	var minute = date.getMinutes();
 	var second = date.getSeconds();
 
