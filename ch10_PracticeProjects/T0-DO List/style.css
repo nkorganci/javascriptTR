@@ -1,1 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(4, 158, 107, 0.39);
+  color: white;
+  min-height: 100vh;
+
+  border: 3px solid red;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+form button {
+  cursor: pointer;
+}
+
+form button:hover{
+  background-color: brown;
+  color: rgb(216, 186, 196);
+}
