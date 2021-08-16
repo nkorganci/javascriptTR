@@ -1,40 +1,5 @@
-*{
-  
-}
-
-.grandparent {
-  width: 400px;
-  height: 400px;
-  border: 9px solid red;
-}
-.parent {
-  width: 00px;
-  height: 400px;
-  border: 9px solid rgb(31, 8, 233);
-}
-.child {
-  width: 400px;
-  height: 400px;
-  border: 9px solid rgb(0, 255, 34);
-}
-
-.grandparent1 {
-  width: 100px;
-  height: 100px;
-  border: 3px solid rgb(193, 233, 14);
-  margin: px;
-}
-.parent1 {
-  width: 100px;
-  height: 100px;
-  border: 3px solid rgb(193, 233, 14);
-  margin: 50px;
-
-}
-.child1 {
-  width: 100px;
-  height: 100px;
-  border: 3px solid rgb(193, 233, 14);
-  margin: 50px;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500px;
 }
