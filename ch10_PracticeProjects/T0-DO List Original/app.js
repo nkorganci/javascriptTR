@@ -5,10 +5,10 @@ const todoList = document.querySelector(".todo-list");
 const filterOption = document.querySelector(".filter-todo");
 
 //Event Listeners
-/* document.addEventListener("DOMContentLoaded", getTodos);
+document.addEventListener("DOMContentLoaded", getTodos);
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteTodo);
-filterOption.addEventListener("click", filterTodo); */
+filterOption.addEventListener("click", filterTodo);
 
 //Functions
 
@@ -18,7 +18,7 @@ function keydown(e) {
   console.log(e.target.value);
 }
 
-/* function addTodo(e) {
+function addTodo(e) {
   //Prevent natural behaviour
   e.preventDefault();
   //Create todo div
@@ -34,6 +34,8 @@ function keydown(e) {
   newTodo.classList.add("todo-item");
   todoDiv.appendChild(newTodo);
   todoInput.value = "";
+
+  
   //Create Completed Button
   const completedButton = document.createElement("button");
   completedButton.innerHTML = `<i class="fas fa-check"></i>`;
@@ -144,4 +146,4 @@ function getTodos() {
     //attach final Todo
     todoList.appendChild(todoDiv);
   });
-} */
+} 
