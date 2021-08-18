@@ -6,6 +6,7 @@ const todoList = document.querySelector(".todo-list");
 //* ====================  EVENT LISTENERS ================================
 
 todoButton.addEventListener("click", addTodo);
+todoList.addEventListener("click", deleteCheck);
 
 //* ====================  FUNCTIONS =======================================
 function addTodo(e) {
@@ -19,7 +20,7 @@ function addTodo(e) {
   // Create li in DIV
   const newTodo = document.createElement("li");
   newTodo.classList.add("todo-item");
-  newTodo.innerText = "hey";
+  newTodo.innerText = todoInput.value;
   todoDiv.appendChild(newTodo);
 
   //Create Check mark Button
@@ -37,4 +38,15 @@ function addTodo(e) {
   //Append DIV to list
 
   todoList.appendChild(todoDiv);
+
+  //Clear todoInput Value
+  todoInput.value = "";
+}
+
+function deleteCheck(e) {
+  const item = e.target;
+  //! Why classList has an array and need to be equal to ...
+  if (item.classList[0] === "trash-btn") {
+    todoInput.remove();
+  }
 }
