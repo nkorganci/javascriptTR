@@ -61,21 +61,62 @@ form button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: all 1s ease;
 }
 .todo li {
   flex: 1;
   background-color: yellow;
-} 
-.trash-btn, .complete-btn{
+}
+.trash-btn,
+.complete-btn {
   background-color: pink;
   padding: 1rem;
   border: none;
   cursor: pointer;
 }
 
-.complete-btn{
+.complete-btn {
   background: greenyellow;
 }
-.todo-item{
+.todo-item {
   padding: 5px;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  /* position: absolute; */
+  background-color: pink;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
 }
