@@ -14,14 +14,18 @@ reset.addEventListener("click", reset1);
 function increase1() {
   count++;
   value.textContent = count;
-}
+  count>0? value.style.color="green":value.style.color="red";
+  }
+
 
 function decrease1() {
   count--;
   value.textContent = count;
-}
+  count>0? value.style.color="green":value.style.color="red";
+  }
+
 function reset1() {
   count = 0;
   value.textContent = count;
-}
- 
+  count>0? value.style.color="green":value.style.color="red";
+  }
