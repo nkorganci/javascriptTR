@@ -63,12 +63,35 @@ function deleteCheck(e) {
 
   //Check Mark
   if (item.classList[0] === "complete-btn") {
-    const todo = item.parentElement;
+    const todo = item.parentElement; //??????????
     todo.classList.toggle("completed");
   }
 }
 
 function filterTodo(e) {
-  const todos = todoList.childNodes;
-  console.log(todos);
+  const todos = todoList.childNodes; //??????????
+  todos.forEach(function (todo) {
+    switch (e.target.value) {
+      case "all":
+        todo.style.display = "flex";
+      case "completed":
+        if (todo.classList.contains("completed")) {
+          todo.style.display = "flex";
+        } else {
+          todo.style.display = "none";
+        }
+    }
+  });
+}
+
+function saveLocalTodos(todo) {
+  //CHECK=== HEY Do I already have thing in there?
+  let todos;
+  if (localStorage.getItem("todos") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  todos.push(todo);
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
