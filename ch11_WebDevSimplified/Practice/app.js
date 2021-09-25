@@ -1,5 +1,8 @@
-var str = "Javatpoint";
-console.log(document.writeln(str.charAt(6)));
+var a;
+console.log(a);
 
-var c = document.writeln(str.charAt(3));
-console.log(c)
+var b = null;
+console.log(b);
+
+console.log(typeof b);
+console.log(typeof (b));
