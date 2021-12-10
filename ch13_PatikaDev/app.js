@@ -1,9 +1,9 @@
-// var c = 'Welcome to 10 Days of JavaScript1!';
-var parameterVariable = 'Welcome to 10 Days of JavaScript!';
-function greeting(parameterVariable) {
-    // This line prints 'Hello, World!' to the console:
-    console.log('Hello, World!');
-    // Write a line of code that prints parameterVariable to stdout using console.log:
-    console.log(parameterVariable);
-      
+var a = 1;
+function b() {
+  a = 2;
+  console.log(a);
 }
+
+b();
+
+console.log(a)
