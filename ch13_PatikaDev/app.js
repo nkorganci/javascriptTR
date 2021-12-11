@@ -1,4 +1,5 @@
-var a = 2;
-function b() {
-  console.log(s);
-}
+let a = "let";
+var b = "var";
+console.log("let: " + window.a);
+console.log("var: "+ window.b);
+
