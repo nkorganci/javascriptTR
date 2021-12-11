@@ -1,9 +1,4 @@
-var a = 1;
+var a = 2;
 function b() {
-  a = 2;
-  console.log(a);
+  console.log(s);
 }
-
-b();
-
-console.log(a)
