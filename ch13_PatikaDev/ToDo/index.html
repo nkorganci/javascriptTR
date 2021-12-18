@@ -8,16 +8,24 @@
 <h3>Innter text and textContent</h3>
 
 <p id="demo">p element contains a 
-  <span style="display: none";" > hidden element</span>
+  <span style="display:none"> hidden element</span>
   <span> Visible Element</span>
-
 </p>
 
-</form>
+<button onclick="getTextContent()">Get Text Content</button>
+<button onclick="getInnerText()">Get Inner Text</button>
+
+<p id="demo"></p>
   
 <script  >
 
+  function getTextContent(){
+    alert(document.getElementById("Demo").textContent);
+  }
 
+  function getInnerText(){
+    alert(document.getElementById("demo").innerText);
+  }
 
 
 </script>
