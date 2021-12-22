@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Remove items from a dropdown list</title>
+  </head>
+  <body>
+    <h1 id="id">Hello World</h1>
 
-    <div id="item">Merhaba Dunya</div>
-    
-<script>
-
-let title=document.querySelector("#item");
-title.innerHTML+=" Query";
-title.style.color="green";
-title.classList.add("btn");
-
-</script>
-</body>
+    <script>
+        let input = promt("Adiniz");
+      let h1 = document.querySelector("#h1");
+      h1.innerHTML=`${h1.innerHTML} <small>${input}</small>`;
+    </script>
+  </body>
 </html>
