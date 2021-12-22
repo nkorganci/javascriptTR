@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 <body>
 
-<h3>Innter text and textContent</h3>
+  <h2>ToDo List</h2>
+  <form class="form1">
+    <div class="div1">
+      <input type="text" placeholder="Enter">
+    <button type="submit">submit</button>
+    </div>
+    
+    
+  </form>
 
-<p id="demo">p element contains a 
-  <span style="display:none"> hidden element</span>
-  <span> Visible Element</span>
-</p>
-
-<button onclick="getTextContent()">Get Text Content</button>
-<button onclick="getInnerText()">Get Inner Text</button>
-
-<p id="demo"></p>
-  
-<script  >
-
-  function getTextContent(){
-    alert(document.getElementById("Demo").textContent);
-  }
-
-  function getInnerText(){
-    alert(document.getElementById("demo").innerText);
-  }
-
-
-</script>
+<script src="mainjs/app.js"></script>
 </body>
 </html>
