@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Remove items from a dropdown list</title>
-  </head>
+  <head> </head>
   <body>
-    <h1 id="id">Hello World</h1>
+    <h1 id="h1">Hello</h1>
+
+    <ul id="item1">
+      <li id="li1">Lorem.</li>
+      <li id="li1">Laborum.</li>
+      <li>Quis!</li>
+      <li>Necessitatibus.</li>
+    </ul>
 
     <script>
-        let input = promt("Adiniz");
-      let h1 = document.querySelector("#h1");
-      h1.innerHTML=`${h1.innerHTML} <small>${input}</small>`;
+
+      function calculator(a,b,operation){
+
+        switch(operation){
+          case "multiplication":
+              return a*b;
+              break;
+          case "division":
+            return a/b;
+              break;
+          default:
+            return "Net defined";
+            break;
+        }
+      }
+      console.log(calculator(2,4,"division"));
     </script>
   </body>
 </html>
