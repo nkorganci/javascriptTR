@@ -57,9 +57,11 @@ console.log(f4("Enver", "Bera"));
 
    console.log(factorial(5)) ;
 
-    //3rd Way
-    function factorialize(n){
-      return n;
-    }
-    console.log(factorialize(4));
-   
+   // short
+      //  function f(n){
+      //   return n.factorial(n-1);
+      //  }
+
+      //  console.log(f(4));
+
+      
