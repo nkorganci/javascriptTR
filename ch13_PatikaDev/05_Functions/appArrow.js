@@ -29,14 +29,28 @@ const seriesList = (list) => {
 seriesList(["A", "B", "C"]);
 
 //5. ForEach() method
-    const array= ["a","b","c"];
-    let result = array.forEach(x=>console.log(x));
+const array = ["a", "b", "c"];
+let result = array.forEach((x) => console.log(x));
 
 // 6. Return
 
-function areaCircle(r,PI=3.14){
-  return r*r*PI;
+function areaCircle(r, PI = 3.14) {
+  return r * r * PI;
 }
 
 var area = areaCircle(2);
 console.log(area);
+
+// 7 Example: Return multiplication of inputs
+
+// Function
+let mult = function (a) {
+  return a * 2;
+};
+
+console.log(mult(77));
+
+//Arrow Function
+
+let mult1 = (a) => {return a * 2};
+console.log(mult1(33));
