@@ -1,8 +1,9 @@
 //1. addEvent without function
 let click = document.querySelector(".h1");
-click.addEventListener("click", function () {
+click.addEventListener("mouseover", function () {
   console.log("clicked");
-  console.log(this);
+  console.log(this.innerHTML="Changed the name");
+  this.style.color=="red"? this.style.color="blue":this.style.color="red";
 });
 
 //2. addEvent with a separate function
