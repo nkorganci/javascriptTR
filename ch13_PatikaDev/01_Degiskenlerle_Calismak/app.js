@@ -33,3 +33,4 @@ console.log(a.split(" "));
 
 // sampple
 console.log("Hi");
+console.log(2+2);
