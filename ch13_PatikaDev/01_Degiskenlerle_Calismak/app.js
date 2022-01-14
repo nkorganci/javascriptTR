@@ -30,3 +30,6 @@ console.log(a.charCodeAt(0));
 
 //split
 console.log(a.split(" "));
+
+// sampple
+console.log("Hi");
