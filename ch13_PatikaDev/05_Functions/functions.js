@@ -62,3 +62,82 @@ function myCalculator(num1,num2){
 
 let result = myCalculator(5,5);
 myDisplayer(result);
+
+//! Callback Function and asynchronous function
+function printScreen1 (){
+    console.log("First Screen");
+}
+
+ function printScreen2 (){
+   setTimeout(function(){
+console.log("Second screen")  
+}, 3000);
+}
+
+function printScreen3 (){
+    console.log("Third Screen");
+}
+printScreen1();
+printScreen2();
+printScreen3();
+
+//! Function Decleration
+function msg(name, lname){
+    // alert(`Hi ${name} ${lname}`)
+}
+// 
+msg("Enver", "Bera")
+
+// TODO - ARROW FUNCTIONS
+
+//* One parameter
+let add = x=>x*x;
+console.log(add(5));
+
+//* More than one parameter
+let add1=(x,y)=> {
+    let z=x+y;
+    return z;
+}
+console.log(add1(3,5));
+
+
+
+// TODO - RECURSION
+//* Recursion is a process of calling itself. A function that calls itself is called a recursive function.
+//* Syntax
+
+// function recurse(){
+//     recurse();
+// }
+
+// recurse();
+
+// program to count down numbers to 1
+function countDown(number) {
+
+    // display the number
+    console.log(number);
+
+    // decrease the number value
+    const newNumber = number - 1;
+
+    // base case
+    if (newNumber > 0) {
+        countDown(newNumber);
+    }
+}
+
+countDown(4);
+
+
+// TODO - NESTED FUNCTIONS
+
+function program(bootcamp,organization){
+    //nested assistant function
+    const allProgram = ()=> bootcamp + " " + organization
+    console.log("started: " + allProgram());
+    console.log(("Ended: " + allProgram()));
+}
+
+program("A","B")
