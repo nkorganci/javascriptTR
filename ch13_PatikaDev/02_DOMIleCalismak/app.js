@@ -18,4 +18,31 @@
 
 //qUERY SELECTRO
     
-let link = document.querySelector("")
+// TODO 1- DOM ELEMENTS
+//! 1A-CLICK
+let h1 = document.getElementById("h1");
+h1.addEventListener("click",domClick);
+
+function domClick(){
+    console.log("domClicks works");
+    console.log(this.innerHTML="InnerTEXT has changed");
+    this.style.color=="red"? this.style.color="blue": this.style.color="red";
+}
+
+//! Counter
+let counter =0;
+let i = document.getElementById("increase");
+let d = document.getElementById("decrease");
+let c = document.getElementById("h2");
+c.innerHTML=counter;
+
+i.addEventListener("click", f);
+d.addEventListener("click",f);
+
+function f(){
+    console.log(this.id);
+    this.id=="increase"? counter+=1:counter-=1;
+    c.innerHTML=counter;
+}
+
+
