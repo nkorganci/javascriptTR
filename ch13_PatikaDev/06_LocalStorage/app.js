@@ -13,3 +13,4 @@ console.log(user);
 //* 2B MULTIPLE VALUES
 let userSatus ={userName:"Enver", isActive:ture};
 localStorage.setItem("user",userSatus);
+
