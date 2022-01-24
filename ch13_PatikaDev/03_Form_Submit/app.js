@@ -27,8 +27,14 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-//TODO 3- onSubmit, onChange
+//TODO 3- EXAMPLE
 
-let input = document.getElementById("input");
-input.setAttribute("type", "text");
-input.setAttribute("value", "write here");
+let userForm = document.getElementById("userForm");
+userForm.addEventListener("submit", formHandler);
+
+function formHandler (event){
+  event.preventDefault();
+  let userName= document.getElementById("userName")
+  let score = document.getElementById("score")
+}
+
